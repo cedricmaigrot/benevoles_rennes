@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+html,
+body {
+  /* text-align: center; */
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: 'Roboto', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2,
+h3,
+h4,
+h1+div,
+h2+div {
+  text-align: center;
+}
+
+h2 span.text {
+  font-style: italic;
+  font-size: .8em;
+}
+
+.col.week {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.badge {
+  font-size: .7em;
+}
+
+.available-person {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+
+.photo {
+  margin-top: 20px;
+  border-radius: 50%;
+  max-width: 150px;
+  border: 4px solid #FFF;
+}
+
+.row.category {
+  position: relative;
+  padding: 20px;
+  margin: 40px;
+}
+
+.row.category>span {
+  position: absolute;
+  width: 6%;
+  min-width: 200px;
+  top: -2rem;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.row.category .col p {
+  font-size: 1.5rem;
+}
+
+.row.category.direction {
+  background-color: #011422;
+  border: 1px solid #406886;
+}
+
+.row.category.direction>span {
+  background-color: #011422;
+  border: 1px solid #406886;
+}
+
+.row.category.agents {
+  background-color: #1E0023;
+  border: 1px solid #7F3E88;
+}
+
+.row.category.agents>span {
+  background-color: #1E0023;
+  border: 1px solid #7F3E88;
+}
+
+.row.category.formation_balade {
+  background-color: #2D3300;
+  border: 1px solid #BCCB5A;
+}
+
+.row.category.formation_balade>span {
+  background-color: #2D3300;
+  border: 1px solid #BCCB5A;
+}
+
+.row.category.reseaux_sociaux {
+  background-color: #011422;
+  border: 1px solid #406886;
+}
+
+.row.category.reseaux_sociaux>span {
+  background-color: #011422;
+  border: 1px solid #406886;
+}
+
+.row.category.club_jeunes {
+  background-color: #351E00;
+  border: 1px solid #D09E5C;
+}
+
+.row.category.club_jeunes>span {
+  background-color: #351E00;
+  border: 1px solid #D09E5C;
+}
+
+.contactWhatsApp.bg-primary {
+  background-color: #25D366 !important;
+  color: #fff;
+}
+
+.contactWhatsApp.bg-primary a {
+  color: #fff;
+  text-decoration: none;
 }
